@@ -1,0 +1,56 @@
+*
+{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    background-color: #7BB1ED;
+}
+body
+{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-div
+{
+    background-color: #3bf103;
+    width: 75%;
+    height: 45vw;
+    border-radius: 40px;
+    overflow: hidden;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.left-box
+{
+    background-color: red;
+    width: 65%;
+    height: 100%;
+}
+
+.right-box
+{
+    background-color: #100E3B;
+    width: 35%;
+    height: 100%;
+
+    background-image: url(./1553545629.svg), url(./1553545629.svg), url(./1553545629.svg);
+    background-repeat: no-repeat;
+
+    background-size: 50%;
+    background-position: -100px, 350px 150px, 400px 500px;
+
+    /* background-image: url(./cloud.svg); */
+}
+
+.bg-img-1
+{
+    width: 50%;
+    /* background-color: #1E1D46; */
+}
+
