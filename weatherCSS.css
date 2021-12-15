@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
 *
 {
     padding: 0px;
@@ -111,9 +113,78 @@ body
 
 .icon
 {
-    background-color: greenyellow;
+    /* background-color: greenyellow; */
+    display: flex;
+    align-items: flex-start;
+    margin: 10px;
 
 }
 
+.small-icon
+{
+    font-size: 50px;
+    color: #4394EC;
+}
+
 .temp
+{
+    /* background-color: aquamarine; */
+    height: 15%;
+    display: flex;
+    align-items: center;
+    justify-content: center ;
+    color: white;
+
+    margin-left: -10px;
+
+    font-size: 6rem;
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+}
+.numbers
+{
+    /* background-color: #3bf103; */
+    display: flex;
+}
+
+.degree
+{
+    font-size: 2rem;
+    align-self: flex-start;
+}
+
+.icon-day
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin-left: -50px;
+    width: 100%;
+}
+
+.place
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    color: white;
+    /* margin-left: -50px; */
+    /* height: 5%; */
+
+    /* font-size: 15px; */
+}
+
+.sunset
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+
+    font-size: 16px;
+
+    height: 5%;
+}
 
