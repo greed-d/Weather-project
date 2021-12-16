@@ -29,57 +29,26 @@ body
     align-items: center;
 }
 
-.search-bar
-{
-    height: 40%;
-    width: 100%%;
-    /* background-color: green; */
-    background: #000;
+.search-bar {
+    width: 50%;
     display: flex;
     align-items: center;
-    justify-content: flex-start;
-    color: rgb(231, 218, 218);
-    border: solid 2px #fff;
-    /* padding-left: 60px; */
-}
-
-.placeholder
-{
-
-}
-
-.search-bar-2
-{
-    height: 100%;
-    width: 100%;
-    background-color: green;
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-}
-
-.search-box
-{
-    height: 40%;
     border-radius: 20px;
+    background-color: #eee;
+    border: 1px solid #fff;
+}
+
+.search-bar input {
+    width: 98%;
+    height: 30px;
     border: none;
-    width: 35%;
-
+    outline: none;
+    background: transparent;
 }
 
-.search-icon
-{
-    font-weight: light;
-    font-size: 30px;
-    color: #9F9EA7;
-    margin: -34.5%;
-
-    width: 50px;
-}
-
-.input
-{
-    text-indent: 20px;
+.search-bar i {
+    padding: 0 4px;
+    color:  #bbb;
 }
 
 .main-div
