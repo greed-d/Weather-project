@@ -133,7 +133,7 @@ body
 
  .location-a, .location-b, .location-c, .location-d
 {
-    background: green;
+    background: rgb(0, 255, 0);
     height: 80%;
     width: 17%;
 
@@ -147,9 +147,12 @@ body
 
 .detailed-weather
 {
-    background: #000;
+    /* background: #000; */
     width: 90%;
     height: 45%;
+
+    justify-content: space-evenly;
+
 }
 
 .sub-weather1, .sub-weather2, .sub-weather3, .sub-weather4, .sub-weather5, .sub-weather6,.sub-weather7
