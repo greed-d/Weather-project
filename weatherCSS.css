@@ -123,16 +123,16 @@ body {
 .location-b,
 .location-c,
 .location-d {
-  background: rgb(0, 255, 0);
   height: 80%;
   width: 17%;
 
   border-radius: 15px;
-  overflow: hidden;
+  /* overflow: hidden; */
 
   display: flex;
   justify-content: center;
   align-items: center;
+  background-image: url(./img/kathmandu.jpg);
 }
 
 .detailed-weather {
@@ -153,7 +153,7 @@ body {
   width: 100%;
   background-color: teal;
   border: 1px solid #000;
-  height: initial;
+  height: 50px;
 }
 
 .right-box {
