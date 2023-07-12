@@ -214,13 +214,12 @@ body {
 }
 
 .mid-part {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  display: grid;
+  place-items: center;
 
   height: 15%;
   width: 100%;
-  background-color: #3bf103;
+  /* background-color: #3bf103; */
   /* margin-left: 100px; */
 }
 
@@ -229,13 +228,13 @@ body {
   /* justify-content: center; */
   /* align-items: center; */
   color: white;
-  background-color: black;
+  /* background-color: black; */
   /* margin-left: -100px; */
 }
 
 .mid-part .day-display .day {
   font-size: 1.9rem;
-  text-align: center;
+  /* text-align: center; */
 }
 
 .small-icon {
@@ -271,17 +270,19 @@ body {
 
 .icon-day {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
+  color: white;
 
-  /* margin-left: -50px; */
+  /* margin-left: 50px; */
   width: 100%;
 }
 
 .icon-holder {
   height: 64px;
   width: 64px;
-  background-color: black;
+  /* background-color: black; */
   /* margin-left: 200px; */
 }
 
