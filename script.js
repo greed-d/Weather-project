@@ -3,10 +3,11 @@ async function getData() {
     "https://api.weatherapi.com/v1/current.json?key=bb011c7deb6e441d8c1112041231107&q=Lalitpur",
   );
   weather = await response.json();
-
+  console.log(weather);
   getCelcius(weather);
   getLocation(weather);
   getDateAndTime(weather);
+  getIcon(weather);
 }
 
 function getCelcius(weather) {
@@ -32,6 +33,16 @@ function getDateAndTime(weather) {
 
   const time = dummyDate.slice(10);
   document.querySelector(".hour").innerHTML = time;
+}
+
+function getIcon(weather) {
+  let imgPath = weather.current.condition.icon;
+
+  let iconDiv = document.querySelector(".icon-holder");
+  imgPath = imgPath.slice(20);
+  let icon = document.createElement("img");
+  icon.src = "./" + imgPath;
+  iconDiv.appendChild(icon);
 }
 
 getData();
