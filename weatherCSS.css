@@ -94,6 +94,10 @@ body {
   height: 45px;
   width: 45px;
 
+  display: flex;
+  align-items: flex-start;
+  margin: 10px;
+
   /* background: green; */
 }
 
@@ -125,6 +129,9 @@ body {
 .location-d {
   height: 80%;
   width: 17%;
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
 
   border-radius: 15px;
   /* overflow: hidden; */
@@ -132,7 +139,11 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-image: url(./img/kathmandu.jpg);
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url(./img/kathmandu.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .detailed-weather {
@@ -209,22 +220,22 @@ body {
 
   height: 15%;
   width: 100%;
-  /* background-color: #3bf103; */
+  background-color: #3bf103;
+  /* margin-left: 100px; */
 }
 
 .mid-part .day-display {
+  /* display: flex; */
+  /* justify-content: center; */
+  /* align-items: center; */
   color: white;
+  background-color: black;
+  /* margin-left: -100px; */
 }
 
 .mid-part .day-display .day {
   font-size: 1.9rem;
-}
-
-.icon {
-  /* background-color: greenyellow; */
-  display: flex;
-  align-items: flex-start;
-  margin: 10px;
+  text-align: center;
 }
 
 .small-icon {
@@ -234,13 +245,13 @@ body {
 
 .temp {
   /* background-color: aquamarine; */
-  height: 15%;
+  /* height: 15%; */
   display: flex;
   align-items: center;
   justify-content: center;
   color: white;
 
-  margin-left: -10px;
+  margin-left: 40px;
 
   font-size: 6rem;
   font-family: "Lato", sans-serif;
@@ -249,10 +260,12 @@ body {
 .numbers {
   /* background-color: #3bf103; */
   display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .degree {
-  font-size: 2rem;
+  font-size: 1rem;
   align-self: flex-start;
 }
 
@@ -261,8 +274,15 @@ body {
   justify-content: center;
   align-items: center;
 
-  margin-left: -50px;
+  /* margin-left: -50px; */
   width: 100%;
+}
+
+.icon-holder {
+  height: 64px;
+  width: 64px;
+  background-color: black;
+  /* margin-left: 200px; */
 }
 
 .place {
