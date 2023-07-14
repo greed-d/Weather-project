@@ -35,7 +35,7 @@ body {
   width: 65%;
   height: 100%;
 
-  padding-left: 80px;
+  padding-left: 40px;
 }
 
 .left-top {
@@ -112,8 +112,8 @@ body {
 }
 
 .left-box .locations {
-  width: 90%;
-  height: 20%;
+  width: 95%;
+  height: 22%;
   /* background-color: #100E3B; */
 
   display: flex;
@@ -147,24 +147,240 @@ body {
 }
 
 .detailed-weather {
-  /* background: #000; */
-  width: 90%;
+  width: 100%;
   height: 45%;
 
   justify-content: space-evenly;
+  display: flex;
+  flex-wrap: wrap;
+  color: #1e2b61;
 }
 
-.sub-weather1,
-.sub-weather2,
-.sub-weather3,
-.sub-weather4,
-.sub-weather5,
-.sub-weather6,
-.sub-weather7 {
-  width: 100%;
-  /* background-color: teal; */
-  border: 1px solid #000;
+.detail-box1 {
+  width: 33.3333%;
+  height: 50%;
+
+  box-sizing: border-box;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.wind-icon img {
   height: 50px;
+  width: 50px;
+  /* color: aquamarine; */
+  padding-right: 20px;
+}
+
+.wind-text-area {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  /* background: aquamarine; */
+  width: 70%;
+}
+
+.wind-title {
+  color: #6d727a;
+  text-align: left;
+  font-size: 1.6vh;
+}
+
+.wind-speed {
+  font-size: 4.5vh;
+}
+
+.detail-box2 {
+  width: 33.3333%;
+  height: 50%;
+
+  box-sizing: border-box;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.rain-icon img {
+  height: 50px;
+  width: 50px;
+  color: aquamarine;
+  padding-right: 20px;
+}
+
+.rain-text-area {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  /* background: aquamarine; */
+  width: 70%;
+}
+
+.rain-title {
+  color: #6d727a;
+  text-align: left;
+  font-size: 1.6vh;
+}
+
+.rain-chances {
+  font-size: 4.5vh;
+}
+
+.detail-box3 {
+  width: 33.3333%;
+  height: 50%;
+
+  box-sizing: border-box;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.pressure-icon img {
+  height: 50px;
+  width: 50px;
+  color: aquamarine;
+  padding-right: 20px;
+}
+
+.pressure-text-area {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  /* background: aquamarine; */
+  width: 70%;
+}
+
+.pressure-title {
+  color: #6d727a;
+  text-align: left;
+  font-size: 1.6vh;
+}
+
+.current-pressure {
+  font-size: 4.5vh;
+}
+
+.detail-box4 {
+  width: 33.3333%;
+  height: 50%;
+
+  box-sizing: border-box;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.uv-icon img {
+  height: 50px;
+  width: 50px;
+  color: aquamarine;
+  padding-right: 20px;
+}
+
+.uv-text-area {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  /* background: aquamarine; */
+  width: 70%;
+}
+
+.uv-title {
+  color: #6d727a;
+  text-align: left;
+  font-size: 1.6vh;
+}
+
+.uv-index {
+  font-size: 4.5vh;
+}
+
+.detail-box5 {
+  width: 33.3333%;
+  height: 50%;
+
+  box-sizing: border-box;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.gust-icon img {
+  height: 50px;
+  width: 50px;
+  color: aquamarine;
+  padding-right: 20px;
+}
+
+.gust-text-area {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  /* background: aquamarine; */
+  width: 70%;
+}
+
+.gust-title {
+  color: #6d727a;
+  text-align: left;
+  font-size: 1.6vh;
+}
+
+.gust-speed {
+  font-size: 4.5vh;
+}
+.detail-box6 {
+  width: 33.3333%;
+  height: 50%;
+
+  box-sizing: border-box;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.humidity-icon img {
+  height: 50px;
+  width: 50px;
+  color: aquamarine;
+  padding-right: 20px;
+}
+
+.humidity-text-area {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  /* background: aquamarine; */
+  width: 70%;
+}
+
+.humidity-title {
+  color: #6d727a;
+  text-align: left;
+  font-size: 1.6vh;
+}
+
+.humidity-amt {
+  font-size: 4.5vh;
 }
 
 .right-box {
@@ -250,11 +466,11 @@ body {
   align-items: center;
   justify-content: center;
   color: white;
-  padding-top: 60px;
+  /* padding-top: 60px; */
 
   margin-left: 40px;
 
-  font-size: 8rem;
+  font-size: 6rem;
   font-family: "Lato", sans-serif;
   font-weight: 300;
 }
@@ -282,8 +498,8 @@ body {
 }
 
 .icon-holder {
-  height: 128px;
-  width: 128px;
+  height: 64px;
+  width: 64px;
   display: grid;
   place-items: center;
   /* background-color: black; */
@@ -291,7 +507,7 @@ body {
 }
 
 .hour {
-  font-size: 26px;
+  font-size: 22px;
 }
 
 .date {
@@ -307,7 +523,7 @@ body {
   /* margin-left: -50px; */
   /* height: 5%; */
 
-  font-size: 18px;
+  font-size: 19px;
 }
 
 .sunset {
@@ -317,7 +533,7 @@ body {
   align-items: center;
   color: white;
 
-  font-size: 18px;
+  font-size: 16px;
 
   height: 5%;
 }
@@ -328,4 +544,12 @@ body {
 
 .settingtime {
   margin: 10px;
+}
+
+.chances {
+  /* background: aquamarine; */
+  height: 40vh;
+
+  /* display: flex; */
+  padding: 20px;
 }
