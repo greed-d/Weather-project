@@ -48,7 +48,7 @@ body {
 }
 
 .search-bar {
-  width: 50%;
+  width: 80%;
   height: 40%;
   display: flex;
   align-items: center;
@@ -162,7 +162,7 @@ body {
 .sub-weather6,
 .sub-weather7 {
   width: 100%;
-  background-color: teal;
+  /* background-color: teal; */
   border: 1px solid #000;
   height: 50px;
 }
@@ -233,7 +233,8 @@ body {
 }
 
 .mid-part .day-display .day {
-  font-size: 1.9rem;
+  font-size: 3.9rem;
+  background-color: black;
   /* text-align: center; */
 }
 
@@ -249,10 +250,11 @@ body {
   align-items: center;
   justify-content: center;
   color: white;
+  padding-top: 60px;
 
   margin-left: 40px;
 
-  font-size: 6rem;
+  font-size: 8rem;
   font-family: "Lato", sans-serif;
   font-weight: 300;
 }
@@ -280,10 +282,20 @@ body {
 }
 
 .icon-holder {
-  height: 64px;
-  width: 64px;
+  height: 128px;
+  width: 128px;
+  display: grid;
+  place-items: center;
   /* background-color: black; */
   /* margin-left: 200px; */
+}
+
+.hour {
+  font-size: 26px;
+}
+
+.date {
+  font-size: 20px;
 }
 
 .place {
@@ -295,57 +307,25 @@ body {
   /* margin-left: -50px; */
   /* height: 5%; */
 
-  /* font-size: 15px; */
+  font-size: 18px;
 }
 
 .sunset {
   display: flex;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
   color: white;
 
-  font-size: 16px;
+  font-size: 18px;
 
   height: 5%;
 }
 
-.graph {
-  width: 100%;
-  height: 40%;
-  /* background-color: #4394EC; */
-  margin-top: 62px;
-  color: white;
-
-  padding: 25px;
-  font-size: 18px;
+.feelslike {
+  margin: 10px;
 }
 
-.chances {
-  font-family: "Lato";
-  font-weight: 100;
-  color: white;
-  height: 80%;
-  width: 20%;
-  /* background-color: aquamarine; */
-
-  margin-top: 30px;
-}
-
-.chances ul {
-  list-style: none;
-  /* background: green; */
-  height: 100%;
-
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  text-align: right;
-}
-
-.graph1 {
-  height: 80%;
-  width: 20%;
-  background-color: aquamarine;
-
-  margin-top: 30px;
+.settingtime {
+  margin: 10px;
 }
