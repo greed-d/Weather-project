@@ -47,8 +47,8 @@ function setIcon(weather) {
   let icon = document.createElement("img");
   icon.classList.add("weather-icon");
 
-  icon.style.width = "96px";
-  icon.style.height = "96px";
+  icon.style.width = "64px";
+  icon.style.height = "64px";
   icon.src = "./" + imgPath;
   iconDiv.appendChild(icon);
 }
@@ -89,7 +89,7 @@ function errorCallback(error) {
 }
 
 function getForecast(location) {
-  console.log(location);
+  console.log("This is location from getForecast: ", location);
   fetch(
     `https://api.weatherapi.com/v1/forecast.json?key=bb011c7deb6e441d8c1112041231107&q=${location}`,
   )
@@ -98,13 +98,14 @@ function getForecast(location) {
       console.log(forecast);
       setFeelsLike(forecast);
       setSunset(forecast);
+      setWindSpeed(forecast);
+      setRainChances(forecast);
     });
   // console.log(response);
 }
 
 function setFeelsLike(forecast) {
   let humidTemp = forecast.current.feelslike_c;
-  console.log(humidTemp);
   document.querySelector(".feelslike").innerHTML = "Feels like " + humidTemp;
 }
 
@@ -114,13 +115,43 @@ function setSunset(forecast) {
     "Sunset at " + sunSettingTime;
 }
 
+function setWindSpeed(forecast) {
+  let windSpeed = forecast.current.wind_mph;
+  document.querySelector(".wind-speed").innerHTML = windSpeed + " km/h";
+  // console.log(windSpeed);
+}
+
+function setRainChances(forecast) {
+  let rainChances = forecast.forecast.forecastday[0].day.totalprecip_mm;
+  // console.log(rainChances);
+  document.querySelector(".rain-chances").innerText = rainChances + " mm";
+}
+
+function setAtmosphericPressure(forecast) {
+  let atmosphericPressure = forecast.current.pressure_mb;
+  document.querySelector(".current-pressure").innerHTML =
+    atmosphericPressure + " mb";
+}
+
+function name(params) {
+  
+}
+
 getCurrentLocation();
+function setWorldLocation() {
+  let locationA = document.querySelector(".location-a");
+  locationA.addEventListener("click", () => getData("Kathmandu"));
+  locationA.addEventListener("click", () => getForecast("Kathmandu"));
+  // locationA.addEventListener("click", () => console.log("Click"));
 
-let locationA = document.querySelector(".location-a");
-locationA.addEventListener("click", () => getData("Kathmandu"));
+  let locationB = document.querySelector(".location-b");
+  locationB.addEventListener("click", () => getData("Berlin"));
+  locationB.addEventListener("click", () => getForecast("Berlin"));
+  // locationB.addEventListener("click", () => console.log("Click"));
 
-let locationB = document.querySelector(".location-b");
-locationB.addEventListener("click", () => getData("Berlin"));
+  let locationC = document.querySelector(".location-c");
+  locationC.addEventListener("click", () => getData("Sydney"));
+  locationC.addEventListener("click", () => getForecast("Sydney"));
+}
 
-let locationC = document.querySelector(".location-c");
-locationC.addEventListener("click", () => getData("Sydney"));
+setWorldLocation();
